@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Posts</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="user.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <section class="posts">
+      <div class="container">
+        <div class="row">
+          <div class="post__search">
+            <a href="index.html">
+              <button class="back-btn">← Back</button>
+            </a>
+
+            <div class="post__search--container">
+              <label class="post__search--label" for="searchInput">
+                Search by Id
+              </label>
+              <input
+                id="searchInput"
+                type="number"
+                placeholder="1"
+                onchange="onSearchChange(event)"
+              >
+            </div>
+          </div>
+
+          <div class="post-list" id="postList">
+            <div class="post">
+              <div class="post__title">
+                Post Title
+              </div>
+              <p class="post__body">
+                Post Body
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
